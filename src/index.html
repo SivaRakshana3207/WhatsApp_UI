@@ -4,38 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp</title>
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/x-icon">
 
     <!-- Tailwind CSS -->
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-green-300">
-    <h1 class="font-bold text-center p-10">WhatsApp UI Challenge using Tailwind CSS</h1>
-    <div class="bg-emerald-800 mx-10 px-4 py-3 font-medium flex items-center justify-between">
-        <h3 class="text-white">WhatsApp</h3>
-        <div class="text-white flex">
-            <svg class="w-6 h-6 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
-            </svg>
-            <svg class="w-6 h-6 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
-            </svg>
+<body>
+    <div class="mx-auto max-w-120 mt-10">
+        <!-- Header -->
+        <div class="bg-emerald-800 mx-10 px-4 py-3 font-medium flex items-center justify-between">
+            <h3 class="text-white">WhatsApp</h3>
+            <div class="text-white flex gap-6">
+                <svg class="w-6 h-6 cursor-pointer dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                </svg>
+                <svg class="w-6 h-6 cursor-pointer dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="4" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                </svg>
+            </div>
         </div>
-    </div>
-    <div class="bg-emerald-800 px-4 mx-10 py-2 flex items-center justify-between">
-        <div class="text-white">
-            <svg class="w-6 h-6 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" d="M7.5 4.586A2 2 0 0 1 8.914 4h6.172a2 2 0 0 1 1.414.586L17.914 6H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h1.086L7.5 4.586ZM10 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" clip-rule="evenodd"/>
-            </svg>
+
+        <!-- Navbar -->
+        <div class="bg-emerald-800 px-4 mx-10 py-2 flex items-center justify-between">
+            <div class="text-white">
+                <svg class="w-6 h-6 cursor-pointer dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M7.5 4.586A2 2 0 0 1 8.914 4h6.172a2 2 0 0 1 1.414.586L17.914 6H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h1.086L7.5 4.586ZM10 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" clip-rule="evenodd"/>
+                </svg>
+            </div>
+            <div class="flex items-center justify-between flex-1 mx-6">
+                <div class="flex align-center cursor-pointer text-center">
+                    <h3 class="text-sm text-white text-medium pr-1.5 ">CHATS</h3>
+                    <div class="w-5 h-5 bg-amber-50 rounded-full"><h5 class="text-emerald-700 text-sm font-semibold">10</h5></div>
+                </div>
+                <div>
+                    <h3 class="text-sm cursor-pointer text-white text-medium">STATUS</h3>
+                </div>
+                <div>
+                    <h3 class="text-sm cursor-pointer text-white text-medium">CALLS</h3>
+                </div>
+            </div>
         </div>
-        <div class="flex align-center text-center">
-            <h3 class="text-sm text-white text-medium pr-1">CHATS</h3>
-            <div class="w-5 h-5 bg-amber-50 rounded-full"><h5 class="text-emerald-700 text-sm font-semibold">10</h5></div>
+
+        <!-- Chat Section -->
+        <div class="flex mx-10 px-4 py-3 space-x-3 bg-white cursor-pointer hover:bg-gray-50">
+            <div>
+                <img src="assets/BillGates.jpg" alt="Bill Gates" class="w-14 h-14 rounded-full ">
+            </div>
+            <div class="flex-1">
+                <h3 class="font-semibold">Bill Gates</h3>
+                <h5 class="text-gray-600">Your project looks good.</h5>
+            </div>
+            <div class="text-center align-center items-center flex flex-col">
+                <h3 class="mb-1 text-emerald-400">11:20 am</h3>
+                <div class="w-5 h-5 bg-emerald-400 rounded-full"><h4 class="text-sm text-white font-bold">2</h4></div>
+            </div>
         </div>
-        <div>
-            <h3 class="text-sm text-white text-medium">STATUS</h3>
+
+        <div class="flex mx-10 px-4 py-3 space-x-3 bg-white cursor-pointer hover:bg-gray-50">
+            <div>
+                <img src="assets/Mukesh_Ambani.jpg" alt="Mukesh Ambani" class="w-14 h-14 rounded-full ">
+            </div>
+            <div class="flex-1">
+                <h3 class="font-semibold">Mukesh Ambani</h3>
+                <h5 class="text-gray-600">I will call you later.</h5>
+            </div>
+            <div class="text-center align-center items-center flex flex-col">
+                <h3 class="mb-1 text-emerald-400">11:10 am</h3>
+                <div class="w-5 h-5 bg-emerald-400 rounded-full"><h4 class="text-sm text-white font-bold">3</h4></div>
+            </div>
         </div>
-        <div>
-            <h3 class="text-sm text-white text-medium">CALLS</h3>
+
+        <div class="flex mx-10 px-4 py-3 space-x-3 bg-white cursor-pointer hover:bg-gray-50">
+            <div>
+                <img src="assets/Sundar_Pichai.jpg" alt="Sundar Pichai" class="w-14 h-14 rounded-full ">
+            </div>
+            <div class="flex-1">
+                <h3 class="font-semibold">Sundar Pichai</h3>
+                <h5 class="text-gray-600">How's your day going?</h5>
+            </div>
+            <div class="text-center align-center items-center flex flex-col">
+                <h3 class="mb-1 text-emerald-400">10:50 am</h3>
+                <div class="w-5 h-5 bg-emerald-400 rounded-full"><h4 class="text-sm text-white font-bold">1</h4></div>
+            </div>
+        </div>
+
+        <div class="flex mx-10 px-4 py-3 space-x-3 bg-white cursor-pointer hover:bg-gray-50">
+            <div>
+                <img src="assets/elon-musk.jpg" alt="Elon Musk" class="w-14 h-14 rounded-full ">
+            </div>
+            <div class="flex-1">
+                <h3 class="font-semibold">Elon Musk</h3>
+                <h5 class="text-gray-600">Don’t forget the meeting.</h5>
+            </div>
+            <div class="text-center align-center items-center flex flex-col">
+                <h3 class="mb-1 text-emerald-400">10:40 am</h3>
+                <div class="w-5 h-5 bg-emerald-400 rounded-full"><h4 class="text-sm text-white font-bold">2</h4></div>
+            </div>
+        </div>
+
+        <div class="flex mx-10 px-4 py-3 space-x-3 bg-white cursor-pointer hover:bg-gray-50">
+            <div>
+                <img src="assets/ronaldo.jpg" alt="Cristiano Ronaldo" class="w-14 h-14 rounded-full ">
+            </div>
+            <div class="flex-1">
+                <h3 class="font-semibold">Cristiano Ronaldo</h3>
+                <h5 class="text-emerald-400">typing...</h5>
+            </div>
+            <div class="text-center align-center items-center flex flex-col">
+                <h3 class="mb-1 text-emerald-400">10:35 am</h3>
+                <div class="w-5 h-5 bg-emerald-400 rounded-full"><h4 class="text-sm text-white font-bold">1</h4></div>
+            </div>
+        </div>
+
+        <div class="flex mx-10 px-4 py-3 space-x-3 bg-white cursor-pointer hover:bg-gray-50">
+            <div>
+                <img src="assets/virat-kohli.jpg" alt="Virat Kohli" class="w-14 h-14 rounded-full ">
+            </div>
+            <div class="flex-1">
+                <h3 class="font-semibold">Virat Kohli</h3>
+                <div class="flex">
+                    <svg width="26px" height="26px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.03033 11.4697C4.73744 11.1768 4.26256 11.1768 3.96967 11.4697C3.67678 11.7626 3.67678 12.2374 3.96967 12.5303L5.03033 11.4697ZM8.5 16L7.96967 16.5303C8.26256 16.8232 8.73744 16.8232 9.03033 16.5303L8.5 16ZM17.0303 8.53033C17.3232 8.23744 17.3232 7.76256 17.0303 7.46967C16.7374 7.17678 16.2626 7.17678 15.9697 7.46967L17.0303 8.53033ZM9.03033 11.4697C8.73744 11.1768 8.26256 11.1768 7.96967 11.4697C7.67678 11.7626 7.67678 12.2374 7.96967 12.5303L9.03033 11.4697ZM12.5 16L11.9697 16.5303C12.2626 16.8232 12.7374 16.8232 13.0303 16.5303L12.5 16ZM21.0303 8.53033C21.3232 8.23744 21.3232 7.76256 21.0303 7.46967C20.7374 7.17678 20.2626 7.17678 19.9697 7.46967L21.0303 8.53033ZM3.96967 12.5303L7.96967 16.5303L9.03033 15.4697L5.03033 11.4697L3.96967 12.5303ZM9.03033 16.5303L17.0303 8.53033L15.9697 7.46967L7.96967 15.4697L9.03033 16.5303ZM7.96967 12.5303L11.9697 16.5303L13.0303 15.4697L9.03033 11.4697L7.96967 12.5303ZM13.0303 16.5303L21.0303 8.53033L19.9697 7.46967L11.9697 15.4697L13.0303 16.5303Z" fill="#34D399"></path> </g></svg>                
+                    <h5 class="text-gray-600">Good morning!</h5>
+                </div>    
+            </div>
+            <div class="text-center align-center items-center flex flex-col">
+                <h3 class="mb-1 text-gray-400">6:45 am</h3>
+            </div>
+        </div>
+
+        <div class="flex mx-10 px-4 py-3 space-x-3 bg-white cursor-pointer hover:bg-gray-50">
+            <div>
+                <img src="assets/jack-ma.PNG" alt="Jack Ma" class="w-14 h-14 rounded-full ">
+            </div>
+            <div class="flex-1">
+                <h3 class="font-semibold">Jack Ma</h3>
+                <h5 class="text-gray-600">What are you doing now?</h5>
+            </div>
+            <div class="text-center align-center items-center flex flex-col">
+                <h3 class="mb-1 text-gray-400">5:20 am</h3>
+            </div>
         </div>
     </div>
 </body>
