@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
 body{
-    background: url(./assets/bg.PNG);
+    background: url('../assets/bg.PNG');
     margin: 10px;
 }
