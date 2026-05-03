@@ -486,7 +486,8 @@
 }
 body {
   background: url('../assets/bg.PNG');
-  margin: 10px;
+  margin: 0;
+  padding: 0;
 }
 .app-container {
   width: 100%;
