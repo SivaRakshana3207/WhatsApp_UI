@@ -4,3 +4,26 @@ body{
     background: url('../assets/bg.PNG');
     margin: 10px;
 }
+
+.app-container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@media (min-width: 640px) {
+    .app-container {
+        max-width: 480px;
+        margin: 20px auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .app-container {
+        max-width: 420px;
+    }
+}
