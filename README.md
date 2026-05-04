@@ -20,6 +20,10 @@ A simple WhatsApp UI clone built using **HTML** and **Tailwind CSS**.
 * `status.html` – Status
 * `calls.html` – Calls
 
+## ▶️ Run
+
+Open `index.html` in your browser.
+
 ## 👩‍💻 Author
 
 Siva Rakshana
